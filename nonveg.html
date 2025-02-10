@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Veg Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            background-color: #b30000;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            width: 250px;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .details {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #b30000;
+            margin-bottom: 10px;
+        }
+        .add-btn {
+            background-color: #008000;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .add-btn:hover {
+            background-color: #006600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Non-Veg Menu</div>
+
+    <div class="container">
+        <div class="card">
+            <img src="chicken_biryani.jpg" alt="Chicken Biryani">
+            <div class="name">Chicken Biryani</div>
+            <div class="details">Spiced basmati rice with tender chicken.</div>
+            <div class="price">₹299</div>
+            <button class="add-btn">Add</button>
+        </div>
+
+        <div class="card">
+            <img src="butter_chicken.jpg" alt="Butter Chicken">
+            <div class="name">Butter Chicken</div>
+            <div class="details">Creamy tomato gravy with rich spices.</div>
+            <div class="price">₹349</div>
+            <button class="add-btn">Add</button>
+        </div>
+
+        <div class="card">
+            <img src="mutton_curry.jpg" alt="Mutton Curry">
+            <div class="name">Mutton Curry</div>
+            <div class="details">Slow-cooked mutton in aromatic spices.</div>
+            <div class="price">₹399</div>
+            <button class="add-btn">Add</button>
+        </div>
+    </div>
+
+</body>
+</html>

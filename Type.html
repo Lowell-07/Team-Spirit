@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            background: white;
+            margin: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .box:hover {
+            transform: scale(1.1);
+            background: #ff4b2b;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">TEAM SPIRIT</div>
+    <div class="container">
+        <a href="veg.html" class="box">VEG</a>
+        <a href="nonveg.html" class="box">NON-VEG</a>
+        <a href="icecreams.html" class="box">ICE CREAMS</a>
+        <a href="drinks.html" class="box">DRINKS</a>
+    </div>
+</body>
+</html>
