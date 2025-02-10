@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Table</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            font-family: Arial, sans-serif;
+            animation: fadeIn 2s ease-in;
+            margin: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .header {
+            width: 100%;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .reserve-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 350px;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: zoomIn 1s ease-in-out;
+            margin-top: 80px;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .form-group input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.7);
+            color: #000;
+        }
+        .reserve-btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #27ae60;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            width: 100%;
+            transition: background 0.3s ease-in-out, transform 0.2s;
+        }
+        .reserve-btn:hover {
+            background: #2ecc71;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">TEAM SPIRIT</div>
+    <div class="reserve-box">
+        <div class="form-group">
+            <label>TABLE NO:</label>
+            <input type="text" placeholder="Enter Table No" required>
+        </div>
+        <div class="form-group">
+            <label>PERSONS:</label>
+            <input type="text" placeholder="No. Of Persons" required>
+        </div>
+        <button class="reserve-btn" onclick="reserveTable()">RESERVE</button>
+    </div>
+    
+    <script>
+        function reserveTable() {
+            window.location.href = 'Type.html'; // Replace with your actual next page
+        }
+    </script>
+</body>
+</html>
